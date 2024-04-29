@@ -6,7 +6,7 @@
 /*   By: aeberius <aeberius@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 14:30:39 by aeberius          #+#    #+#             */
-/*   Updated: 2024/04/24 15:23:54 by aeberius         ###   ########.fr       */
+/*   Updated: 2024/04/29 15:10:08 by aeberius         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcpy (&result[ft_strlen(result)], s2, ft_strlen(s2) + 1);
 	return (result);
 }
-
-/* int main()
-{
-	printf("%s\n", ft_strjoin("olaaa", "bb"));
-} */

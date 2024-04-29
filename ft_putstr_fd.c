@@ -6,7 +6,7 @@
 /*   By: aeberius <aeberius@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 11:22:21 by aeberius          #+#    #+#             */
-/*   Updated: 2024/04/15 11:52:25 by aeberius         ###   ########.fr       */
+/*   Updated: 2024/04/29 15:09:28 by aeberius         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,5 @@ void	ft_putstr_fd(char *s, int fd)
 
 	i = 0;
 	while (s[i] != '\0')
-	{
-		write (fd, &s[i], 1);
-		i++;
-	}
+		write (fd, &s[i++], 1);
 }

@@ -6,7 +6,7 @@
 /*   By: aeberius <aeberius@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 13:11:35 by aeberius          #+#    #+#             */
-/*   Updated: 2024/04/24 15:24:49 by aeberius         ###   ########.fr       */
+/*   Updated: 2024/04/29 15:07:40 by aeberius         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	while (i < size * nmemb)
 	{
-		result[i] = '\0';
-		i++;
+		result[i++] = '\0';
 	}
 	return (result);
 }

@@ -6,7 +6,7 @@
 /*   By: aeberius <aeberius@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 18:05:50 by aeberius          #+#    #+#             */
-/*   Updated: 2024/04/27 19:02:42 by aeberius         ###   ########.fr       */
+/*   Updated: 2024/04/29 11:37:45 by aeberius         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,15 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 	if (lst == NULL || (*f) == NULL || (*del) == NULL)
 		return (NULL);
-	while (lst->next != NULL)
+	new_lst = NULL;
+	while (lst != NULL)
 	{
 		new_element = ft_lstnew(f(lst->content));
 		if (new_element == NULL)
+		{
 			ft_lstclear(&new_lst, del);
+			return (NULL);
+		}
 		ft_lstadd_back(&new_lst, new_element);
 		lst = lst->next;
 	}
