@@ -6,16 +6,16 @@
 /*   By: aeberius <aeberius@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 11:32:11 by aeberius          #+#    #+#             */
-/*   Updated: 2024/04/30 15:44:27 by aeberius         ###   ########.fr       */
+/*   Updated: 2024/05/01 13:00:43 by aeberius         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_count_words(char const *s, char c)
+int	ft_count_words(char const *s, char c)
 {
-	int i;
-	int count_words;
+	int	i;
+	int	count_words;
 
 	i = 0;
 	count_words = 0;
@@ -45,8 +45,8 @@ char	**ft_split(char const *s, char c)
 {
 	char	**result;
 	int		count_word;
-	int		word_index; //índice atual na matriz de strings
-	int		char_index; //posição atual na string enquanto procuramos por palavras
+	int		word_index;
+	int		char_index;
 
 	word_index = 0;
 	char_index = 0;
