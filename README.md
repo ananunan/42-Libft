@@ -34,20 +34,28 @@ Implementation of a **linked list** to handle dynamic data:
 
 ## 🚀 Compilation
 To compile the library, run:
-- `make`
-This will generate a `libft.a` file that can be linked to other projects.
-**Cleaning compiled files:**
-`make clean`: Removes object files (.o).
-`make fclean`: Removes object files and the library (libft.a).
-`make re`: Runs fclean and recompiles everything from scratch.
 
-##📋 Requirements
+`make`
+
+This will generate a `libft.a` file that can be linked to other projects.
+
+**Cleaning compiled files:**
+- `make clean`: Removes object files (.o).
+- `make fclean`: Removes object files and the library (libft.a).
+- `make re`: Runs fclean and recompiles everything from scratch.
+
+## 📋 Requirements
+
 CC compiler.
+
 Familiarity with norminette, which ensures compliance with the 42 coding standards.
 
-##🏆 Learning Objectives
+## 🏆 Learning Objectives
 
 Implement standard and custom functions.
+
 Work with pointers, dynamic memory allocation, and linked lists.
+
 Ensure code modularity and reusability.
+
 Master the use of Makefile to automate compilation.
