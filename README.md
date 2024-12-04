@@ -28,7 +28,7 @@ Here’s what you’ll find in your shiny new library:
    git clone https://github.com/ananunan/42-Libft.git
    cd 42-Libft
    
-2. Compile your library:
+2. Compile the library:
 `make`
 
 3. Call functions and watch them work wonders! 🌈
